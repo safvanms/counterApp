@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 90vh;
+  background-color: rgb(0, 0, 0);
 }
 
 .display {
@@ -13,29 +14,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 52px;
-  letter-spacing: 4px;
+  font-size: 72px;
+  letter-spacing: 2px;
   font-weight: bolder;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .display:hover {
-  background-color: rgba(255, 254, 254, 0.45);
+  background-color: rgb(255, 255, 255);
 }
 
 .lg-display {
   display: none;
 }
 
-.resetbox{
-    border: none;
-    padding: 5px 10px;
-    margin-top: 20px;
-    border-radius: 4px;
+.resetbox {
+  border: none;
+  padding: 5px 10px;
+  margin-top: 20px;
+  border-radius: 4px;
 }
 
+.digit-1 {
+  color: rgb(2, 167, 2);
+}
 
+.digit-2 {
+  color: rgb(1, 132, 1);
+}
 
+.digit-3 {
+  color: rgb(0, 96, 0);
+}
 
 @media (min-width: 801px) {
   .container {

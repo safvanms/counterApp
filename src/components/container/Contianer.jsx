@@ -28,10 +28,21 @@ export default function Contianer() {
     <>
       <div className="container">
         <div className="display" onClick={handleCount}>
-          <h3>{count}</h3>
-          
+        <h3>
+          {count
+            .toString()
+            .split("")
+            .map((digit, index) => (
+              <span
+                key={index}
+                className={`digit digit-${index + 1}`}
+              >
+                {digit}
+              </span>
+            ))}
+        </h3>
         </div>
-        {count ? <button className="resetbox" onClick={resetCount}>Reset</button>:''}
+        <button className="resetbox" disabled={!count} onClick={resetCount}>Reset</button>
       </div>
       <div class="lg-display">
         <h3>This app only works in screens with 800 pixels or below</h3>
