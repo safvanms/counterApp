@@ -29,6 +29,7 @@ export default function Contianer() {
       <div className="container">
         <div className="display" onClick={handleCount}>
           <h3>{count}</h3>
+          
         </div>
         {count ? <button className="resetbox" onClick={resetCount}>Reset</button>:''}
       </div>
