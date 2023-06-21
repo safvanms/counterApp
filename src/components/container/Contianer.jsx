@@ -28,7 +28,11 @@ export default function Contianer() {
     <>
       <div className="container">
         <div className="display" onClick={handleCount}>
-          <h3>{count}</h3>
+          <h3>{
+          <span className="first-digit">{count.toString()[0]}</span>
+          <span className="second-digit">{count.toString()[1]}</span>
+          <span className="third-digit">{count.toString()[2]}</span>
+          }</h3>
         </div>
         {count ? <button className="resetbox" onClick={resetCount}>Reset</button>:''}
       </div>
