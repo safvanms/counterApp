@@ -35,7 +35,17 @@
     border-radius: 4px;
 }
 
+.first-digit {
+  color: green;
+}
 
+.second-digit {
+  color: blue;
+}
+
+.third-digit {
+  color: red;
+}
 
 
 @media (min-width: 801px) {
