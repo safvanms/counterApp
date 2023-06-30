@@ -18,9 +18,7 @@ export default function Contianer() {
       setCount(parseInt(storedCount));
     }
     const currentTime = new Date();
-const hours = currentTime.getHours();
-const minutes = currentTime.getMinutes();
-const seconds = currentTime.getSeconds();
+
 
   }, []);
 
@@ -48,7 +46,7 @@ const seconds = currentTime.getSeconds();
         </h3>
         </div>
         <button className="resetbox" disabled={!count} onClick={resetCount}>Reset</button>
-        <p style={{color:"white"}}>{hours:minutes:seconds}</p>
+        <p style={{color:"white"}}>{currentTime}</p>
       </div>
       <div class="lg-display">
         <h3>This app only works in screens with 800 pixels or below</h3>
