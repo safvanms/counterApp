@@ -20,7 +20,7 @@ export default function Contianer() {
     const currentTime = new Date();
 
 
-  }, []);
+  }, [currentTime]);
 
   useEffect(() => {
      localStorage.setItem('count', count.toString());
