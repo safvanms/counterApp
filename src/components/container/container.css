@@ -4,13 +4,13 @@
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background-color: rgb(0, 0, 0);
+  background-color: #252525;
 }
 
 .display {
   width: 300px;
   height: 300px;
-  border-radius: 20%;
+  border-radius: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,9 +31,10 @@
 
 .resetbox {
   border: none;
-  padding: 5px 10px;
+  padding: 7px 20px;
   margin-top: 20px;
-  border-radius: 4px;
+  border-radius: 10px;
+  color: black;
 }
 
 .digit-1 {
