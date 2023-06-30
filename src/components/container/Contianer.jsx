@@ -43,6 +43,7 @@ export default function Contianer() {
         </h3>
         </div>
         <button className="resetbox" disabled={!count} onClick={resetCount}>Reset</button>
+        
       </div>
       <div class="lg-display">
         <h3>This app only works in screens with 800 pixels or below</h3>
