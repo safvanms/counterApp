@@ -23,7 +23,7 @@ export default function Contianer() {
     const seconds = currentTime.getSeconds();
 
 
-  }, [currentTime]);
+  }, [hours,minutes,seconds]);
 
   useEffect(() => {
      localStorage.setItem('count', count.toString());
