@@ -50,7 +50,7 @@ export default function Contianer() {
         </div>
         <div>
         <button className="resetbox" disabled={!count} onClick={resetCount}>Reset</button>
-        <p style={{color:"white"}}>{hours:minutes:seconds}</p>
+        <p >{hours:minutes:seconds}</p>
         </div>
       </div>
       <div class="lg-display">
