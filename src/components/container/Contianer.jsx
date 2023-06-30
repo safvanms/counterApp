@@ -45,8 +45,10 @@ export default function Contianer() {
             ))}
         </h3>
         </div>
+        <div>
         <button className="resetbox" disabled={!count} onClick={resetCount}>Reset</button>
         <p style={{color:"white"}}>{currentTime}</p>
+        </div>
       </div>
       <div class="lg-display">
         <h3>This app only works in screens with 800 pixels or below</h3>
