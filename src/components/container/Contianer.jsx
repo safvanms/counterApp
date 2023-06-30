@@ -17,7 +17,12 @@ export default function Contianer() {
     if (storedCount !== null) {
       setCount(parseInt(storedCount));
     }
-  }, []);
+    const currentTime = new Date();
+const hours = currentTime.getHours();
+const minutes = currentTime.getMinutes();
+const seconds = currentTime.getSeconds();
+
+  }, [hours,minutes,seconds]);
 
   useEffect(() => {
      localStorage.setItem('count', count.toString());
@@ -43,6 +48,7 @@ export default function Contianer() {
         </h3>
         </div>
         <button className="resetbox" disabled={!count} onClick={resetCount}>Reset</button>
+        <p style={{color:"white"}}>{hours:minutes:seconds}</p>
       </div>
       <div class="lg-display">
         <h3>This app only works in screens with 800 pixels or below</h3>
