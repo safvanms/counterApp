@@ -18,6 +18,9 @@ export default function Contianer() {
       setCount(parseInt(storedCount));
     }
     const currentTime = new Date();
+    const hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
 
 
   }, [currentTime]);
@@ -47,7 +50,7 @@ export default function Contianer() {
         </div>
         <div>
         <button className="resetbox" disabled={!count} onClick={resetCount}>Reset</button>
-        <p style={{color:"white"}}>{currentTime}</p>
+        <p style={{color:"white"}}>{hours:minutes:seconds}</p>
         </div>
       </div>
       <div class="lg-display">
