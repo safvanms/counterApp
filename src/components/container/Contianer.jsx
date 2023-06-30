@@ -22,7 +22,7 @@ const hours = currentTime.getHours();
 const minutes = currentTime.getMinutes();
 const seconds = currentTime.getSeconds();
 
-  }, [hours,minutes,seconds]);
+  }, []);
 
   useEffect(() => {
      localStorage.setItem('count', count.toString());
