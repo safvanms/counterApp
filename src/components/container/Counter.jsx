@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./container.css";
+import BeepSound from "../../assets/beep.mp3";
 
 export default function Counter() {
   const [count, setCount] = useState(0);
@@ -11,9 +12,11 @@ export default function Counter() {
 
   const handleCount = () => {
     const newCount = count + 1;
+    const beep = new Audio(BeepSound);
     setCount(newCount);
     if (newCount === goal && "vibrate" in navigator) {
-      navigator.vibrate(1000);
+      beep.play();
+      navigator.vibrate(500);
       setGoal("");
     }
   };
